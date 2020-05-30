@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap project website</title>
+    <!-- CDN-S -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <!-- CUSTOM FILES -->
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div id="background" class="container-fluid p-0">
+    <header class="masthead mb-auto w-100">
+        <div class="inner d-flex flex-row">
+            <div class="col-2">
+                <a class="navbar-brand justify-content-start" href="#">
+                    <img class="p-0" src="logo.png" width="90" height="100%" alt="logo">
+                </a>
+            </div>
+            <nav class="col-10 nav nav-masthead justify-content-end">
+                <ul class="nav justify-content-end" id="ulBorder">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#row-1">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#row-2">concept</a>
+                    </li>
+                    <li class="nav-item" id="nav-item-none-border">
+                        <a class="nav-link" href="#row-3">projects</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="row-1" class="container-fluid m-0 d-block">
+            
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container-fluid">
+                        <h1 id="heading" class="p-0">Ar<span class="p-0 m-0" style="z-index: 250">c</span>hitecture</h1>
+                        <p id="sign" class="p-0">&</p>
+                        <p id="subheading" class="p-0">nature</p>
+                    </div>
+                    <div class="container">
+                        <div class=" d-flex flex-column p-3" id="heading-card-1">
+                            <h5 class="">Amber House</h5>
+                            <blockquote class="blockquote">
+                                <p class="quote-1 p-0 m-1">The main source of inspiration for this project is a vision of a bonfire, burning in a dark northern forest, akin to a welcoming lighthouse. </p>
+                                <footer class="blockquote-footer p-0 m-0">Alex Neronya</footer>
+                            </blockquote>
+                        </div>
+                        <div class="d-flex flex-column p-3" id="heading-card-2">
+                            <h5 class="">Sounds interesting?</h5>
+                            <a href="https://leckiestudio.com/portfolio/great-lakes-cabin/" target="_blank"><button type="button" class="btn my-3">See more</button></a>
+                        </div>
+                    </div>
+                </div>
+        </div>  
+            
+        <div id="row-2" class="container-fluid m-0 d-block">
+            <div id="objectives" class="text-left p-0">
+                <p class="objectives-heading">Main objectives</p>
+                <p class="objectives-text">Aim of this selection is to highlight architectural projects that combine professionalism and consciousness. Choosen projects are blended into the nature, sustainable and practical. Main idea is to push the creativity of architects from designing skyscrapers towards beautiful nature, so we can live in it and not harm it. <br> <span class="highlight">Symbiosis.</span>  </p>
+            </div>
+        </div>
+
+        <div id="row-3" class="container-fluid d-block m-0 w-100">
+            <div class="row d-flex flex-row align-items-center">
+                <div class="card col-4 p-3 d-flex flex-column align-items-end text-right" style="background: transparent; height: 20vh">
+                  <img src="nature.png" alt="nature_img" width="100px" height="100px">
+                  <h5 class="card-title w-50 p-2">Nature</p>
+                  <p class="card-text">Creation in the nature and its preservation is the most crucial part of existance.</p>
+                </div>
+                <div class="card col-4 p-3 d-flex flex-column align-items-center text-center" style="background: transparent;height: 20vh;">
+                  <img src="design.png" alt="design_img"  width="100px" height="100px">
+                  <h5 class="card-title w-50 p-2">Design</p>
+                  <p class="card-text">Design clever. Less wasted space, create more practical solutions.</p>
+                </div>
+                <div class="card col-4 p-3 d-flex flex-column align-items-start text-left" style="background: transparent;height: 20vh">
+                  <img src="sustainability.png" alt="sustainability_img"  width="100px" height="100px">
+                  <h5 class="card-title w-50 p-2">Sustainability</p>
+                  <p class="card-text">Sustainable design. <br>Renewable materials and renewable energy. </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="row-4" class="container-fluid d-flex flex-column p-0 m-0 w-100" style="z-index: -500; background-color: #050505;">
+            <div class="row py-5">
+            <div id="cabin-div" class="col-12 d-flex flex-row">
+                <img id="cabin" class="col-3 p-0 w-100" src="cabin.jpg" alt="Cabin_in_the_nature" style="z-index: -150">
+    
+                    <blockquote id="blockquote-1" class="blockquote col-9 p-5 d-flex flex-column justify-content-center" > 
+                        <p class="blockquote-heading">Great Lakes Cabin</p>
+                        <p class="quote-1">The structural system is comprised of a sustainably harvested engineered glulam timber frame, clad with prefabricated insulated wall/roof/floor panels. The compact structure is crafted to have a minimal environmental impact on the site.</p>
+                        <footer class="blockquote-footer">Leckie Studio Architecture</footer>
+                        <a href="https://leckiestudio.com/portfolio/great-lakes-cabin/"><button type="button" class="btn btn-outline-light my-3">See more</button></a>
+                    </blockquote>
+                </div> 
+            </div>
+            <div class="row pb-5">
+            <div id="hotel-div" class="col-12 d-flex flex-row">
+                    <blockquote id="blockquote-2" class="blockquote col-9 p-5 d-flex flex-column justify-content-center align-items-end">
+                        <p class="blockquote-heading-2"> Tree House Hotel</p>
+                        <p class="quote-2">The project is conceived as a 'slow down' form of tourism, where nature and the integration of architecture within it plays the primary role. We believe that the future of tourism is based on the relationship of the human being with nature. Well integrated, sustainable architecture can amplify this relationship, nothing else is needed </p>
+                        <footer class="blockquote-footer" style="margin-right: 13.5vw">Peter Pichler & Silvana Ordinas</footer>
+                        <a href="https://worldarchitecture.org/article-links/epncg/peter-pichler-architecture-designs-tree-houses-with-sharp-steep-roofs-in-north-italy.html"><button type="button" class="btn btn-outline-light my-3" style="margin-right: 13.5vw">See more</button></a>
+                    </blockquote>
+                    <img id="hotel" class="col-3 p-0 d-flex align-self-end" src="hotel.jpg" alt="Tree_House_hotel" style="z-index: -150">
+                </div>
+            </div>
+            <div class="row pb-5">
+                <div id="house-div" class="col-12  d-flex flex-row">
+                    <img id="house" class="col-3 p-0 d-flex align-self-start" src="house.jpg" alt="House_in_the_forest" style="z-index: -150">
+                        <blockquote class="blockquote col-9 p-3 d-flex flex-column justify-content-center" style="margin-left: 3vw;">
+                            <p class="blockquote-heading">Forest House</p>
+                            <p class="quote-1">Forest House is a contemporary style house, erected on mountain side. Due to the natural materials such as stone and wood the house is made of, it perfectly fits into the surrounding, becoming its inseparable part. </p>
+                            <footer class="blockquote-footer">U-Style Architects</footer>
+                            <a href="https://archello.com/project/forest-house-6#stories"><button type="button" class="btn btn-outline-light my-3">See more</button></a>
+                        </blockquote>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer id="footer">
+        <div class="container-fluid">
+            <div class="row d-flex flex-row">
+                <div class="col-5 d-flex flex-column align-items-start justify-content-start">
+                    <h5>NARCH</h5>
+                    <p>Promoting sustainable architecture projects.<br>
+                        Save next generations. <br>
+                        All projects are referenced and quoted in order to respect intellectual property.
+                    </p>
+                </div>
+                <div class="col-3 d-flex flex-column align-items-start text-left justify-content-start">
+                    <h5>Projects</h5>
+                    <p style="line-height: 1.5em;">01 Amber House <br> 02 Great Lakes Cabin <br> 03 Tree House Hotel <br> 04 Forest House</p>
+                </div>
+                <div class="col-4 d-flex flex-column align-items-start justify-content-start">
+                    <h5>Send us your project</h5>
+                    <label for="exampleInputEmail1"></label>
+                    <div class="form-group d-flex flex-row">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" style="height: 7vh; border: none; color: rgba(97, 109, 107, 0.918); background-color: #090e088e; width: 15vw;">
+                    <button type="submit" class="btn" style="border: none; width: 6vw; height: 7vh; background: rgba(241, 49, 11, 0.801);">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mt-5 d-flex justify-content-center">
+            <p>Copyright @ Elma Mehmedic | web developer</p>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>
