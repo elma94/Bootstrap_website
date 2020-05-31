@@ -11,11 +11,14 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <!-- CUSTOM FILES -->
     <script src="script.js"></script>
+    
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <link rel="stylesheet" href="style.css" type="text/css">
+    
 </head>
 <body>
     <div id="background" class="container-fluid p-0">
-    <header class="masthead mb-auto w-100">
+    <header class="load-hidden masthead mb-auto w-100">
         <div class="inner d-flex flex-row">
             <div class="col-2">
                 <a class="navbar-brand justify-content-start" href="#">
@@ -42,19 +45,19 @@
             
                 <div class="jumbotron jumbotron-fluid">
                     <div class="container-fluid">
-                        <h1 id="heading" class="p-0">Ar<span class="p-0 m-0" style="z-index: 250">c</span>hitecture</h1>
-                        <p id="sign" class="p-0">&</p>
-                        <p id="subheading" class="p-0">nature</p>
+                        <h1 id="heading" class="load-hidden p-0">Ar<span class="p-0 m-0" style="z-index: 250">c</span>hitecture</h1>
+                        <p id="sign" class="load-hidden p-0">&</p>
+                        <p id="subheading" class="load-hidden  p-0">nature</p>
                     </div>
                     <div class="container">
-                        <div class=" d-flex flex-column p-3" id="heading-card-1">
+                        <div class=" load-hidden  d-flex flex-column p-3" id="heading-card-1">
                             <h5 class="">Amber House</h5>
                             <blockquote class="blockquote">
                                 <p class="quote-1 p-0 m-1">The main source of inspiration for this project is a vision of a bonfire, burning in a dark northern forest, akin to a welcoming lighthouse. </p>
                                 <footer class="blockquote-footer p-0 m-0">Alex Neronya</footer>
                             </blockquote>
                         </div>
-                        <div class="d-flex flex-column p-3" id="heading-card-2">
+                        <div class=" load-hidden d-flex flex-column p-3" id="heading-card-2">
                             <h5 class="">Sounds interesting?</h5>
                             <a href="https://leckiestudio.com/portfolio/great-lakes-cabin/" target="_blank"><button type="button" class="btn my-3">See more</button></a>
                         </div>
@@ -64,13 +67,13 @@
             
         <div id="row-2" class="container-fluid m-0 d-block">
             <div id="objectives" class="text-left p-0">
-                <p class="objectives-heading">Main objectives</p>
-                <p class="objectives-text">Aim of this selection is to highlight architectural projects that combine professionalism and consciousness. Choosen projects are blended into the nature, sustainable and practical. Main idea is to push the creativity of architects from designing skyscrapers towards beautiful nature, so we can live in it and not harm it. <br> <span class="highlight">Symbiosis.</span>  </p>
+                <p id="objectives-heading">Main objectives</p>
+                <p id="objectives-text">Aim of this selection is to highlight architectural projects that combine professionalism and consciousness. Choosen projects are blended into the nature, sustainable and practical. Main idea is to push the creativity of architects from designing skyscrapers towards beautiful nature, so we can live in it and not harm it. <br> <span class="highlight">Symbiosis.</span>  </p>
             </div>
         </div>
 
         <div id="row-3" class="container-fluid d-block m-0 w-100">
-            <div class="row d-flex flex-row align-items-center">
+            <div id="icons-row" class="row d-flex flex-row align-items-center">
                 <div class="card col-4 p-3 d-flex flex-column align-items-end text-right" style="background: transparent; height: 20vh">
                   <img src="nature.png" alt="nature_img" width="100px" height="100px">
                   <h5 class="card-title w-50 p-2">Nature</p>
@@ -156,5 +159,40 @@
         </div>
     </footer>
     </div>
+
+    <script>
+            
+        window.sr = new ScrollReveal({reset: false});
+        
+        
+        var nodeArray = [
+            document.querySelector('header'),
+            document.querySelector('#heading'),
+            document.querySelector('#sign'),
+            document.querySelector('#subheading'),
+            document.querySelector('#heading-card-1'),
+            document.querySelector('#heading-card-2')
+        ];
+
+        sr.reveal(nodeArray, {easing: 'ease-in', interval: 500});
+        
+        
+        sr.reveal('#objectives-heading', {easing: 'ease-in', delay: 500});
+        sr.reveal('#objectives-text', {easing: 'ease-in', delay: 500});
+        sr.reveal('#icons-row', {easing: 'ease-in', delay: 1200});
+
+        ScrollReveal({ distance: '60px' });
+        sr.reveal('#cabin', {origin: 'left', delay: 700});
+        sr.reveal('#cabin-div', {easing: 'ease-in', delay: 800});
+
+        sr.reveal('#hotel', {origin: 'right', delay: 700});
+        sr.reveal('#hotel-div', {easing: 'ease-in', delay: 800});
+
+        sr.reveal('#house', {origin: 'left', delay: 700});
+        sr.reveal('#house-div', {easing: 'ease-in', delay: 800});
+        
+        sr.reveal('#background', {opacity: 0.95, delay: 3000});
+
+    </script>
 </body>
 </html>

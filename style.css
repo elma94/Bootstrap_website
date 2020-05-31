@@ -2,12 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 
+html.sr .load-hidden {
+    visibility: hidden;
+}
+
 /* body */
 html,body{
     width: 100vw;
     height: 100vh;
     cursor: crosshair;
-    overflow-x: hidden;
    
 }
 
@@ -165,10 +168,10 @@ header{
         padding: 15vh 10vw 10vh 15vh;
     }
 
-    #objectives .objectives-heading{
+    #objectives-heading{
         font-size: 1.8em;
     }
-    #objectives .objectives-heading:after{
+    #objectives-heading:after{
         content: "";
         display: block;
         margin: 0;
@@ -177,7 +180,7 @@ header{
         border-bottom: 3px solid rgba(241, 49, 11, 0.801);
     }
     
-    #objectives .objectives-text{
+    #objectives-text{
         font-size: 1em;
         width: 50%;
         opacity: 0.9;
