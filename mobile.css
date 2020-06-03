@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+html.sr .load-hidden {
+    visibility: hidden;
+}
+
+/* body */
+html,body{
+    width: 100vw;
+    height: 100vh;
+    cursor: crosshair;
+    overflow-x: hidden;
+}
+/* background */
+#background{
+    background-position: 60% 10%;
+    background-image: url("background.jpg");
+    height: 100%;
+    width: 100%;
+   
+}
+/* header */
+header{
+    position:absolute;
+    z-index:10;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    height: 10vh;
+    background: transparent;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    
+}
+/* navbar */
+.nav ul li a{
+    font-size: 0.8em;
+    font-weight: bold;
+    padding-top: 5vh;
+    color: rgba(97, 109, 107, 0.918);
+}
+/* logo */
+#logo{
+    width: 50px;
+    height: 50px;
+}
+/* row-1  */
+#row-1{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+/* jumbotron */
+.jumbotron{
+    height: 100vh;
+    background: transparent;
+    position: absolute;
+    top: 10vh;
+    color: white;
+}
+ /* jumbotron headings */
+    #heading{
+        position: absolute;
+        z-index: 110;
+        top: 5vh;
+        font-size: 2.1em;
+        letter-spacing: 0.1em;
+        font-family: 'Playfair Display', serif;
+        text-transform: uppercase;
+    }
+    #sign{
+        position: absolute;
+        font-size: 10em;
+        left: 5vw;
+        top:-2vh;
+        background: linear-gradient(63deg, rgba(251,164,40,0.9164040616246498) 0%, rgba(246, 102, 25, 0.616) 36%, rgba(245, 97, 23, 0.63) 38%, rgba(241, 49, 11, 0.801) 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        z-index: 100;
+        font-family: 'Raleway', sans-serif;
+    }
+    #subheading{
+        position: relative;
+        top: 7vh;
+        font-size: 1.3em;
+        letter-spacing: 2.1em;
+        z-index: 100;
+        font-family: 'Playfair Display', serif;
+        mix-blend-mode: luminosity;
+    }
+    /* jumbotron cards */
+        /* card 1 */
+        #heading-card-1{
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.671);
+            color: rgba(97, 109, 107, 0.918);
+            height: auto;
+            width: 80vw;
+            bottom: 200px;
+        }
+
+        #heading-card-1 h5{
+            font-size: 0.9em;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 0.1em;
+        }
+
+        #heading-card-1 h5:after{
+            content: "";
+            display: block;
+            margin: 0;
+            width: 30px;
+            padding-top: 1vh;
+            border-bottom: 3px solid rgba(241, 49, 11, 0.801);
+        }
+
+        #heading-card-1 p{
+            font-size: 0.6em;
+            
+        }
+
+    /* card-2 */
+        #heading-card-2{
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.671);
+            color: rgba(97, 109, 107, 0.918);
+            bottom: 15vh;
+            height: auto;
+            width: 80vw;
+            padding-top: 10px;
+        }
+
+        #heading-card-2 h5{
+            font-size: 0.9em;
+            font-family: 'Playfair Display', serif;
+        }
+
+        #heading-card-2 h5:after{
+            content: "";
+            display: block;
+            margin: 0;
+            width: 30px;
+            padding-top: 1vh;
+            border-bottom: 3px solid rgba(241, 49, 11, 0.801);
+        }
+
+        .btn{
+            background: initial;
+            width: 150px;
+            border: 2px solid rgba(172, 171, 171, 0.863);
+            color: rgba(97, 109, 107, 0.918);
+            font-size: 0.9em;
+        }
+
+    /* main objectives row-2 */
+    #row-2{
+        position: relative;
+        top: 0vh;
+        background-color: #050505;
+        color: rgba(97, 109, 107, 0.918);
+        width: initial;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        padding-bottom: 5vh;
+    }
+    #objectives-heading{
+        font-size: 1.8em;
+    }
+    #objectives-heading:after{
+        content: "";
+        display: block;
+        margin: 0;
+        width: 30px;
+        padding-top: 1vh;
+        border-bottom: 3px solid rgba(241, 49, 11, 0.801);
+    }
+    #objectives-text{
+        font-size: 0.9em;
+        width: 80vw;
+        text-align: justify;
+    }
+    .highlight{
+        color: rgba(241, 49, 11, 0.801);
+        font-size: 3em;
+        font-family: 'Playfair Display', serif; 
+    }
+
+    /* icons row-3 */
+    #row-3{
+        position: relative;
+        background-color: #050505;
+        color: rgba(97, 109, 107, 0.918);
+        width: 100vw;
+        height: 40vh;
+        padding-left: 10vw;
+        padding-bottom: 10vh;
+        padding-right: 10vw;
+        justify-content: space-around;
+        align-items: start;
+        top:0;
+    }
+    #row-3 img{
+        width: 40px;
+        height: 40px;
+    }
+    .card{
+        padding: 5vw;
+    }
+    .card-title{
+        font-family: 'Playfair Display', serif;
+        text-align: left;
+        font-size: 0.6em;
+        padding-top: 2em;
+    }
+    .card-text{
+        font-size: 0.7em;
+        line-height: 1.5em;
+        text-align: left;
+        width: 15vw;
+        
+      
+    }
+
+    /* projects row-4 */
+    #row-4{
+        position: relative;
+        color: #050505;
+        width: 100vw;
+    }
+        /* cabin row */
+        #cabin-div{
+            background-color: #050505;
+            z-index: -150;
+            color: rgba(97, 109, 107, 0.918);
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            padding-left: 10vw;
+            padding-right: 10vw;
+            padding-bottom: 5vh;
+        }
+        #cabin-div:after{
+            content: "";
+            display: block;
+            position:absolute;
+            border-top: 5px solid rgba(241, 49, 11, 0.801);
+            border-left: 5px solid rgba(241, 49, 11, 0.801);
+            width: 50vw;
+            height: 40vh;
+            top: 0;
+            left: 10vw;
+            z-index: -200;
+        }
+        #cabin{
+            height: auto;
+            padding: 1em;
+        }
+        .blockquote-heading{
+            font-size: 1.2em;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 0.1em;
+            padding-top: 5vh;
+        }
+        .blockquote-heading:after{
+            content: "";
+            display: block;
+            margin: 0;
+            width: 25px;
+            padding-top: 1vh;
+            border-bottom: 3px solid rgba(241, 49, 11, 0.801);
+        }
+        .quote-1{ 
+            font-size: 0.6em;
+        }
+        /* hotel row */
+        #hotel-div{
+            background-color: #050505;
+            z-index: -100;
+            height: auto;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            padding-left: 10vw;
+            padding-right: 10vw;
+            padding-bottom: 5vh;
+        }
+        #hotel-div:after{
+            content: "";
+            display: block;
+            position:absolute;
+            background-color: #090e088e;
+            border-right: 5px solid rgba(241, 49, 11, 0.801);
+            width: 100vw;
+            height: 40vh;
+            top: 10vh;
+            right: 10vw;
+            z-index: -200;
+        }
+        #hotel{
+            height: 500px;
+            padding-bottom: 5vh;
+        }
+        #blockquote-2{
+            text-align: right;
+            color: rgba(97, 109, 107, 0.918);
+        }
+        .blockquote-heading-2{
+            font-size: 1.2em;
+            text-align: right;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 0.1em;
+        }
+        .blockquote-heading-2:after{
+            content: "";
+            display: block;
+            margin: 0;
+            width: 25px;
+            border-bottom: 3px solid rgba(241, 49, 11, 0.801);
+            text-align: right;
+            margin-left: 5vw;
+        }
+        .quote-2{
+            font-size: 0.6em;
+            right: 0;
+        }
+        /* house row */
+        #house-div{
+            color: rgba(97, 109, 107, 0.918);
+            background-color: #050505;
+            z-index: -100;
+            height: auto;
+            top: 0;
+            padding-left: 10vw;
+            padding-right: 10vw;
+        }
+        #house-div:after{
+            content: "";
+            display: block;
+            position: absolute;
+            border-bottom: 5px solid rgba(241, 49, 11, 0.801);
+            border-left: 5px solid rgba(241, 49, 11, 0.801);
+            width: 50vw;
+            height: 300px;
+            top: 200px;
+            z-index: -200;
+        }
+        #house{
+            padding: 1em;
+            height: 500px;
+
+        }
+
+.blockquote-footer{
+    font-family: 'Parisienne', cursive;
+    font-size: 0.8em;
+    background:transparent;
+}
+#footer{
+    height: 100vh;
+    background-color: #050505;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    bottom: 0;
+}
+#footer h5:after{
+    content: "";
+    display: block;
+    margin: 0;
+    width: 30px;
+    padding-top: 1vh;
+    border-bottom: 3px solid rgba(241, 49, 11, 0.801);
+}
+#email-input{
+    height: 7vh; 
+    border: none; 
+    color: rgba(97, 109, 107, 0.918); 
+    background-color: #090e088e; 
+    width: 60vw;
+}
+#btn-subscribe{
+    border: none; 
+    width: 20vw; 
+    height: 7vh; 
+    background: rgba(241, 49, 11, 0.801);
+}
+ 
+
+
