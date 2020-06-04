@@ -11,15 +11,16 @@ html,body{
     width: 100vw;
     height: 100vh;
     cursor: crosshair;
-    overflow-x: hidden;
+   
 }
+
 /* background */
 #background{
-    background-position: 60% 10%;
     background-image: url("images/background.jpg");
+    background-size: cover;
+    background-position: 60%;
     height: 100%;
-    width: 100%;
-   
+    width: 100vw;
 }
 /* header */
 header{
@@ -27,31 +28,31 @@ header{
     z-index:10;
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.2em;
     height: 10vh;
     background: transparent;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    
+    padding: 0 10vw;
 }
+
 /* navbar */
 .nav ul li a{
-    font-size: 1em;
-    font-weight: bold;
-    padding-top: 5vh;
+    padding:2em 1.5em;
     color: rgba(97, 109, 107, 0.918);
+    
 }
-/* logo */
+
 #logo{
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
 }
-/* row-1  */
+
 #row-1{
     position: relative;
     height: 100vh;
     width: 100%;
     overflow: hidden;
-    padding: 0 !important;
+    padding-left: 10vw;
+    padding-right: 10vw;
 }
 /* jumbotron */
 .jumbotron{
@@ -60,58 +61,57 @@ header{
     position: absolute;
     top: 10vh;
     color: white;
-    padding-left: 10vw !important;
-    padding-right: 10vw !important;
 }
  /* jumbotron headings */
     #heading{
-        position: absolute;
+        font-size: 3.8em;
         z-index: 110;
-        top: 5vh;
-        font-size: 3em;
-        letter-spacing: 0.3em;
+        position: absolute;
+        top: 15vh;
+        letter-spacing: 0.18em;
         font-family: 'Playfair Display', serif;
         text-transform: uppercase;
-        padding: 0 !important;
     }
+
     #sign{
         position: absolute;
-        font-size: 10em;
-        top: -1vh;
+        top: -5vh;
+        font-size: 23em;
         background: linear-gradient(63deg, rgba(251,164,40,0.9164040616246498) 0%, rgba(246, 102, 25, 0.616) 36%, rgba(245, 97, 23, 0.63) 38%, rgba(241, 49, 11, 0.801) 100%);
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
         z-index: 100;
         font-family: 'Raleway', sans-serif;
-        padding: 0 !important;
     }
+
     #subheading{
+        font-size: 2.2em;
+        letter-spacing: 2.68em;
         position: relative;
-        top: 7vh;
-        font-size: 1.3em;
-        letter-spacing: 3em;
+        top: 16vh;
         z-index: 100;
         font-family: 'Playfair Display', serif;
         mix-blend-mode: luminosity;
-        padding: 0 !important;
     }
+
     /* jumbotron cards */
-        /* card 1 */
+
+    /* card 1 */
         #heading-card-1{
             position: absolute;
+            bottom: 15vh;
+            left: 20vw;
+            width: 40vw;
+            height: 22vh;
             background-color: rgba(0, 0, 0, 0.671);
-            color: rgba(97, 109, 107, 0.918);
-            height: auto;
-            width: 75vw;
-            bottom: 200px;
-            
+           color: rgba(97, 109, 107, 0.918);
+           font-family: 'Playfair Display', serif;
         }
 
         #heading-card-1 h5{
-            font-size: 0.9em;
-            font-family: 'Playfair Display', serif;
-            letter-spacing: 0.1em;
+            font-size: 1em;
+            letter-spacing: 0.05em;
         }
 
         #heading-card-1 h5:after{
@@ -124,25 +124,27 @@ header{
         }
 
         #heading-card-1 p{
-            font-size: 0.6em;
-            
+            font-size: 0.7em;
+            font-family: 'Raleway', sans-serif;
         }
 
     /* card-2 */
         #heading-card-2{
             position: absolute;
+            bottom: 15vh;
+            left: 62vw;
             background-color: rgba(0, 0, 0, 0.671);
             color: rgba(97, 109, 107, 0.918);
-            bottom: 15vh;
-            height: auto;
-            width: 75vw;
-            padding-top: 10px;
+            opacity: 0.7;
+            width: 17vw;
+            height: 22vh;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 0.1;
         }
 
         #heading-card-2 h5{
-            font-size: 0.9em;
-            font-family: 'Playfair Display', serif;
-            letter-spacing: 0.1em;
+            font-size: 1em;
+            letter-spacing: 0.05em;
         }
 
         #heading-card-2 h5:after{
@@ -159,7 +161,6 @@ header{
             width: 150px;
             border: 2px solid rgba(172, 171, 171, 0.863);
             color: rgba(97, 109, 107, 0.918);
-            font-size: 0.9em;
         }
 
     /* main objectives row-2 */
@@ -170,8 +171,9 @@ header{
         color: rgba(97, 109, 107, 0.918);
         width: initial;
         height: 60vh;
-        padding: 10vh 10vw 10vh 10vw;
+        padding: 15vh 10vw 20vh 15vh;
     }
+
     #objectives-heading{
         font-size: 1.8em;
     }
@@ -183,15 +185,18 @@ header{
         padding-top: 1vh;
         border-bottom: 3px solid rgba(241, 49, 11, 0.801);
     }
+    
     #objectives-text{
-        font-size: 0.9em;
-        width: 80vw;
-        text-align: justify;
+        font-size: 1em;
+        width: 50%;
+        opacity: 0.9;
     }
+
     .highlight{
         color: rgba(241, 49, 11, 0.801);
-        font-size: 3em;
-        font-family: 'Playfair Display', serif; 
+        font-size: 5em;
+        font-family: 'Playfair Display', serif;
+        
     }
 
     /* icons row-3 */
@@ -200,78 +205,101 @@ header{
         background-color: #050505;
         color: rgba(97, 109, 107, 0.918);
         width: 100vw;
-        height: 55vh;
-        padding-left: 10vw;
-        padding-right: 10vw;
+        height: 60vh;
+        padding: 15vh 10vw 15vh 15vh;
+        flex-direction: row;
         justify-content: space-around;
-        align-items: start;
-        top:0;
     }
+
     #row-3 img{
-        width: 60px;
-        height: 60px;
+        height: 90px;
+        width: 90px;
+        
+    }
+
+    #icons-row{
+        justify-content: space-evenly;
+        width: 100vw;
+        
+        padding-top: 10vh;
     }
     .card{
-        padding: 5vw;
+        width: 180px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-bottom: 10vh;
     }
     .card-title{
+        font-size: 1.2em;
         font-family: 'Playfair Display', serif;
         text-align: left;
-        font-size: 1em;
-        padding-top: 2em;
+        padding-top: 3vh;
+        width: 180px;
     }
+
+
     .card-text{
-        font-size: 0.8em;
+        font-size: 0.7em;
         line-height: 1.5em;
+        width: 200px;
         text-align: left;
-        width: 15vw;
-      
+        
     }
 
     /* projects row-4 */
     #row-4{
         position: relative;
         color: #050505;
-        width: 100vw;
     }
+
         /* cabin row */
         #cabin-div{
             background-color: #050505;
             z-index: -150;
             color: rgba(97, 109, 107, 0.918);
-            height: auto;
+            height: 80vh;
+            padding-top: 15vh;
             display: flex;
-            flex-direction: column;
-            padding-left: 10vw;
-            padding-right: 10vw;
-            padding-bottom: 5vh;
+            flex-direction: row;
+            padding-bottom: 10vh;
+
         }
+
         #cabin-div:after{
             content: "";
             display: block;
             position:absolute;
             border-top: 5px solid rgba(241, 49, 11, 0.801);
             border-left: 5px solid rgba(241, 49, 11, 0.801);
-            width: 50vw;
-            height: 40vh;
-            top: 0;
+            width: 70vw;
+            height: 50vh;
+            top: 12.5vh;
             left: 10vw;
             z-index: -200;
         }
+
         #cabin{
+            padding: 0;
+            margin-left: 10vw;
+            padding-left: 1em;
             height: 500px;
-            width: 65%;
-            padding: 1em;
+            top: 0vh;
+
         }
 
         #blockquote-1{
-            justify-content: start !important;
+            padding-left: 5vw;
+            width: 30%;
         }
+
         .blockquote-heading{
-            font-size: 1.2em;
+            font-size: 1.6em;
             font-family: 'Playfair Display', serif;
-            letter-spacing: 0.1em;
+            letter-spacing: 0.3em;
         }
+
         .blockquote-heading:after{
             content: "";
             display: block;
@@ -280,133 +308,141 @@ header{
             padding-top: 1vh;
             border-bottom: 3px solid rgba(241, 49, 11, 0.801);
         }
-        .quote-1{ 
-            font-size: 0.6em;
-            width: 65%;
+
+        .quote-1{
+            font-size: 0.8em;
+            width:35vw;
         }
+
         /* hotel row */
         #hotel-div{
-            float:right;
             background-color: #050505;
             z-index: -100;
-            height: auto;
+            height: 80vh;
             display: flex;
-            flex-direction: column;
-            padding-left: 10vw;
-            padding-right: 10vw;
-            padding-bottom: 5vh;
+            flex-direction: row;
+            justify-content: flex-end;
+            padding-bottom: 10vh;
+            width: 100%;
         }
+
         #hotel-div:after{
             content: "";
             display: block;
             position:absolute;
             background-color: #090e088e;
             border-right: 5px solid rgba(241, 49, 11, 0.801);
-            width: 100vw;
-            height: 80vh;
-            top: 10vh;
-            right: 10vw;
+            width: 80vw;
+            height: 60vh;
+            top: 15vh;
+            left: 10vw;
             z-index: -200;
         }
-        #hotel{
-            height: auto;
-            width: 65%;
-            margin-left: 35%;
-            right: 0;
-            padding-bottom: 5vh;
-        }
+
         #blockquote-2{
             text-align: right;
             color: rgba(97, 109, 107, 0.918);
-            justify-content: start !important;
-        }
+            top: 10vh;
+        } 
+
         .blockquote-heading-2{
-            font-size: 1.2em;
-            text-align: right;
+            font-size: 1.6em;
             font-family: 'Playfair Display', serif;
-            letter-spacing: 0.1em;
+            letter-spacing: 0.3em;
+            margin-right: calc(350px + 10vw + 5px);
         }
+
         .blockquote-heading-2:after{
             content: "";
             display: block;
-            margin: 0;
             width: 25px;
             border-bottom: 3px solid rgba(241, 49, 11, 0.801);
-            margin-left: 43vw;
+                 margin-left: 6vw;
         }
+
+        #hotel{
+            position: absolute;
+            right: 0;
+            height: 500px;
+            top: 15vh;
+            margin-right: 10vw;
+        }
+
+
         .quote-2{
-            font-size: 0.6em;
-            margin-left: 35%;
-            width: 65%;
+            font-size: 0.8em;
+            width:35vw;
         }
+        #middle-footer, #middle-button{
+            margin-right: calc(350px + 10vw + 5px);
+        }
+
         /* house row */
         #house-div{
             color: rgba(97, 109, 107, 0.918);
             background-color: #050505;
             z-index: -100;
+            width: 100%;
             height: auto;
-            top: 0;
+            display: flex;
+            flex-direction: row;
             padding-left: 10vw;
-            padding-right: 10vw;
         }
+
         #house-div:after{
             content: "";
             display: block;
-            position: absolute;
-            border-bottom: 5px solid rgba(241, 49, 11, 0.801);
+            position:absolute;
             border-left: 5px solid rgba(241, 49, 11, 0.801);
-            width: 50vw;
-            height: 300px;
-            top: 200px;
+            border-bottom: 5px solid rgba(241, 49, 11, 0.801);
+            width: 80vw;
+            height: 50vh;
+            bottom: 0;
+            left: 10vw;
             z-index: -200;
         }
+
         #house{
-            padding: 1em;
             height: 500px;
-            width: 65%;
-            margin-bottom: 5vh !important;
+            margin-bottom: 15px;
+            padding: 0;
+        }
+
+        #blockquote-3{
+            padding-left: 5vw;
         }
 
 .blockquote-footer{
     font-family: 'Parisienne', cursive;
-    font-size: 0.8em;
+    font-size: 1.2em;
     background:transparent;
 }
+
 #footer{
-    height: 100vh;
+    height: 50vh;
     background-color: #050505;
     padding-left: 10vw;
     padding-right: 10vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    bottom: 0;
+    padding-top: 15vh;
 }
 
-#footer h5{
-    font-size: 0.9em;
-}
 #footer h5:after{
     content: "";
-    display: block;
-    margin: 0;
-    width: 30px;
-    padding-top: 1vh;
-    border-bottom: 3px solid rgba(241, 49, 11, 0.801);
+            display: block;
+            margin: 0;
+            width: 30px;
+            padding-top: 1vh;
+            border-bottom: 3px solid rgba(241, 49, 11, 0.801);
 }
+
 #email-input{
-    height: 7vh; 
-    border: none; 
-    color: rgba(97, 109, 107, 0.918); 
-    background-color: #090e088e; 
-    width: 30vw;
+    background: #090e088e;
+    outline: none;
+    border:none;
+    height: 7vh;
 }
+
 #btn-subscribe{
-    border: none; 
-    width: 10vw; 
-    height: 7vh; 
     background: rgba(241, 49, 11, 0.801);
+    border: none;
 }
- 
-
-
