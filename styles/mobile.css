@@ -1,11 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
-
 html.sr .load-hidden {
     visibility: hidden;
 }
-
 /* body */
 html,body{
     width: 100vw;
@@ -18,8 +13,7 @@ html,body{
     background-position: 60% 10%;
     background-image: url("background.jpg");
     height: 100%;
-    width: 100%;
-   
+    width: 100%; 
 }
 /* header */
 header{
@@ -102,13 +96,11 @@ header{
             width: 80vw;
             bottom: 200px;
         }
-
         #heading-card-1 h5{
             font-size: 0.9em;
             font-family: 'Playfair Display', serif;
             letter-spacing: 0.1em;
         }
-
         #heading-card-1 h5:after{
             content: "";
             display: block;
@@ -117,12 +109,10 @@ header{
             padding-top: 1vh;
             border-bottom: 3px solid rgba(241, 49, 11, 0.801);
         }
-
         #heading-card-1 p{
             font-size: 0.6em;
             
         }
-
     /* card-2 */
         #heading-card-2{
             position: absolute;
@@ -133,12 +123,10 @@ header{
             width: 80vw;
             padding-top: 10px;
         }
-
         #heading-card-2 h5{
             font-size: 0.9em;
             font-family: 'Playfair Display', serif;
         }
-
         #heading-card-2 h5:after{
             content: "";
             display: block;
@@ -147,7 +135,6 @@ header{
             padding-top: 1vh;
             border-bottom: 3px solid rgba(241, 49, 11, 0.801);
         }
-
         .btn{
             background: initial;
             width: 150px;
@@ -155,7 +142,6 @@ header{
             color: rgba(97, 109, 107, 0.918);
             font-size: 0.9em;
         }
-
     /* main objectives row-2 */
     #row-2{
         position: relative;
@@ -189,7 +175,6 @@ header{
         font-size: 3em;
         font-family: 'Playfair Display', serif; 
     }
-
     /* icons row-3 */
     #row-3{
         position: relative;
@@ -225,7 +210,6 @@ header{
         
       
     }
-
     /* projects row-4 */
     #row-4{
         position: relative;
@@ -352,14 +336,13 @@ header{
         #house{
             padding: 1em;
             height: 500px;
-
         }
-
 .blockquote-footer{
     font-family: 'Parisienne', cursive;
     font-size: 0.8em;
     background:transparent;
 }
+/* footer */
 #footer{
     height: 100vh;
     background-color: #050505;

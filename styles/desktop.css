@@ -1,19 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
-
 html.sr .load-hidden {
     visibility: hidden;
 }
-
 /* body */
 html,body{
     width: 100vw;
     height: 100vh;
     cursor: crosshair;
-   
 }
-
 /* background */
 #background{
     background-image: url("background.jpg");
@@ -33,19 +26,15 @@ header{
     background: transparent;
     padding: 0 10vw;
 }
-
 /* navbar */
 .nav ul li a{
     padding:2em 1.5em;
-    color: rgba(97, 109, 107, 0.918);
-    
+    color: rgba(97, 109, 107, 0.918);  
 }
-
 #logo{
     width: 100px;
     height: 100px;
 }
-
 #row-1{
     position: relative;
     height: 100vh;
@@ -72,7 +61,6 @@ header{
         font-family: 'Playfair Display', serif;
         text-transform: uppercase;
     }
-
     #sign{
         position: absolute;
         top: -5vh;
@@ -84,7 +72,6 @@ header{
         z-index: 100;
         font-family: 'Raleway', sans-serif;
     }
-
     #subheading{
         font-size: 2.2em;
         letter-spacing: 2.68em;
@@ -94,9 +81,7 @@ header{
         font-family: 'Playfair Display', serif;
         mix-blend-mode: luminosity;
     }
-
     /* jumbotron cards */
-
     /* card 1 */
         #heading-card-1{
             position: absolute;
@@ -108,12 +93,10 @@ header{
            color: rgba(97, 109, 107, 0.918);
            font-family: 'Playfair Display', serif;
         }
-
         #heading-card-1 h5{
             font-size: 1em;
             letter-spacing: 0.05em;
         }
-
         #heading-card-1 h5:after{
             content: "";
             display: block;
@@ -122,12 +105,10 @@ header{
             padding-top: 1vh;
             border-bottom: 3px solid rgba(241, 49, 11, 0.801);
         }
-
         #heading-card-1 p{
             font-size: 0.7em;
             font-family: 'Raleway', sans-serif;
         }
-
     /* card-2 */
         #heading-card-2{
             position: absolute;
@@ -141,12 +122,10 @@ header{
             font-family: 'Playfair Display', serif;
             letter-spacing: 0.1;
         }
-
         #heading-card-2 h5{
             font-size: 1em;
             letter-spacing: 0.05em;
         }
-
         #heading-card-2 h5:after{
             content: "";
             display: block;
@@ -155,14 +134,12 @@ header{
             padding-top: 1vh;
             border-bottom: 3px solid rgba(241, 49, 11, 0.801);
         }
-
         .btn{
             background: initial;
             width: 150px;
             border: 2px solid rgba(172, 171, 171, 0.863);
             color: rgba(97, 109, 107, 0.918);
         }
-
     /* main objectives row-2 */
     #row-2{
         position: relative;
@@ -173,7 +150,6 @@ header{
         height: 60vh;
         padding: 15vh 10vw 20vh 15vh;
     }
-
     #objectives-heading{
         font-size: 1.8em;
     }
@@ -184,21 +160,18 @@ header{
         width: 30px;
         padding-top: 1vh;
         border-bottom: 3px solid rgba(241, 49, 11, 0.801);
-    }
-    
+    } 
     #objectives-text{
         font-size: 1em;
         width: 50%;
         opacity: 0.9;
     }
-
     .highlight{
         color: rgba(241, 49, 11, 0.801);
         font-size: 5em;
         font-family: 'Playfair Display', serif;
         
     }
-
     /* icons row-3 */
     #row-3{
         position: relative;
@@ -210,13 +183,11 @@ header{
         flex-direction: row;
         justify-content: space-around;
     }
-
     #row-3 img{
         height: 90px;
         width: 90px;
         
     }
-
     #icons-row{
         justify-content: space-evenly;
         width: 100vw;
@@ -238,8 +209,6 @@ header{
         padding-top: 3vh;
         width: 180px;
     }
-
-
     .card-text{
         font-size: 0.7em;
         line-height: 1.5em;
@@ -247,13 +216,11 @@ header{
         text-align: left;
         
     }
-
     /* projects row-4 */
     #row-4{
         position: relative;
         color: #050505;
     }
-
         /* cabin row */
         #cabin-div{
             background-color: #050505;
@@ -266,7 +233,6 @@ header{
             padding-bottom: 10vh;
 
         }
-
         #cabin-div:after{
             content: "";
             display: block;
@@ -279,7 +245,6 @@ header{
             left: 10vw;
             z-index: -200;
         }
-
         #cabin{
             padding: 0;
             margin-left: 10vw;
@@ -288,18 +253,15 @@ header{
             top: 0vh;
 
         }
-
         #blockquote-1{
             padding-left: 5vw;
             width: 30%;
         }
-
         .blockquote-heading{
             font-size: 1.6em;
             font-family: 'Playfair Display', serif;
             letter-spacing: 0.3em;
         }
-
         .blockquote-heading:after{
             content: "";
             display: block;
@@ -308,12 +270,10 @@ header{
             padding-top: 1vh;
             border-bottom: 3px solid rgba(241, 49, 11, 0.801);
         }
-
         .quote-1{
             font-size: 0.8em;
             width:35vw;
         }
-
         /* hotel row */
         #hotel-div{
             background-color: #050505;
@@ -325,7 +285,6 @@ header{
             padding-bottom: 10vh;
             width: 100%;
         }
-
         #hotel-div:after{
             content: "";
             display: block;
@@ -338,20 +297,17 @@ header{
             left: 10vw;
             z-index: -200;
         }
-
         #blockquote-2{
             text-align: right;
             color: rgba(97, 109, 107, 0.918);
             top: 10vh;
         } 
-
         .blockquote-heading-2{
             font-size: 1.6em;
             font-family: 'Playfair Display', serif;
             letter-spacing: 0.3em;
             margin-right: calc(350px + 10vw + 5px);
         }
-
         .blockquote-heading-2:after{
             content: "";
             display: block;
@@ -359,7 +315,6 @@ header{
             border-bottom: 3px solid rgba(241, 49, 11, 0.801);
                  margin-left: 6vw;
         }
-
         #hotel{
             position: absolute;
             right: 0;
@@ -367,8 +322,6 @@ header{
             top: 15vh;
             margin-right: 10vw;
         }
-
-
         .quote-2{
             font-size: 0.8em;
             width:35vw;
@@ -376,7 +329,6 @@ header{
         #middle-footer, #middle-button{
             margin-right: calc(350px + 10vw + 5px);
         }
-
         /* house row */
         #house-div{
             color: rgba(97, 109, 107, 0.918);
@@ -388,7 +340,6 @@ header{
             flex-direction: row;
             padding-left: 10vw;
         }
-
         #house-div:after{
             content: "";
             display: block;
@@ -401,23 +352,20 @@ header{
             left: 10vw;
             z-index: -200;
         }
-
         #house{
             height: 500px;
             margin-bottom: 15px;
             padding: 0;
         }
-
         #blockquote-3{
             padding-left: 5vw;
         }
-
 .blockquote-footer{
     font-family: 'Parisienne', cursive;
     font-size: 1.2em;
     background:transparent;
 }
-
+/* footer */
 #footer{
     height: 50vh;
     background-color: #050505;
@@ -425,23 +373,20 @@ header{
     padding-right: 10vw;
     padding-top: 15vh;
 }
-
 #footer h5:after{
     content: "";
-            display: block;
-            margin: 0;
-            width: 30px;
-            padding-top: 1vh;
-            border-bottom: 3px solid rgba(241, 49, 11, 0.801);
+    display: block;
+    margin: 0;
+    width: 30px;
+    padding-top: 1vh;
+    border-bottom: 3px solid rgba(241, 49, 11, 0.801);
 }
-
 #email-input{
     background: #090e088e;
     outline: none;
     border:none;
     height: 7vh;
 }
-
 #btn-subscribe{
     background: rgba(241, 49, 11, 0.801);
     border: none;

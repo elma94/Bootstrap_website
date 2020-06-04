@@ -1,11 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
-
 html.sr .load-hidden {
     visibility: hidden;
 }
-
 /* body */
 html,body{
     width: 100vw;
@@ -107,13 +102,11 @@ header{
             bottom: 200px;
             
         }
-
         #heading-card-1 h5{
             font-size: 0.9em;
             font-family: 'Playfair Display', serif;
             letter-spacing: 0.1em;
         }
-
         #heading-card-1 h5:after{
             content: "";
             display: block;
@@ -122,12 +115,10 @@ header{
             padding-top: 1vh;
             border-bottom: 3px solid rgba(241, 49, 11, 0.801);
         }
-
         #heading-card-1 p{
             font-size: 0.6em;
             
         }
-
     /* card-2 */
         #heading-card-2{
             position: absolute;
@@ -138,13 +129,11 @@ header{
             width: 75vw;
             padding-top: 10px;
         }
-
         #heading-card-2 h5{
             font-size: 0.9em;
             font-family: 'Playfair Display', serif;
             letter-spacing: 0.1em;
         }
-
         #heading-card-2 h5:after{
             content: "";
             display: block;
@@ -153,7 +142,6 @@ header{
             padding-top: 1vh;
             border-bottom: 3px solid rgba(241, 49, 11, 0.801);
         }
-
         .btn{
             background: initial;
             width: 150px;
@@ -161,7 +149,6 @@ header{
             color: rgba(97, 109, 107, 0.918);
             font-size: 0.9em;
         }
-
     /* main objectives row-2 */
     #row-2{
         position: relative;
@@ -193,7 +180,6 @@ header{
         font-size: 3em;
         font-family: 'Playfair Display', serif; 
     }
-
     /* icons row-3 */
     #row-3{
         position: relative;
@@ -225,9 +211,7 @@ header{
         line-height: 1.5em;
         text-align: left;
         width: 15vw;
-      
     }
-
     /* projects row-4 */
     #row-4{
         position: relative;
@@ -263,7 +247,6 @@ header{
             width: 65%;
             padding: 1em;
         }
-
         #blockquote-1{
             justify-content: start !important;
         }
@@ -366,12 +349,12 @@ header{
             width: 65%;
             margin-bottom: 5vh !important;
         }
-
 .blockquote-footer{
     font-family: 'Parisienne', cursive;
     font-size: 0.8em;
     background:transparent;
 }
+/* footer */
 #footer{
     height: 100vh;
     background-color: #050505;
@@ -382,7 +365,6 @@ header{
     justify-content: center;
     bottom: 0;
 }
-
 #footer h5{
     font-size: 0.9em;
 }
