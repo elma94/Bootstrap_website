@@ -16,7 +16,7 @@ html,body{
 
 /* background */
 #background{
-    background-image: url("images/background.jpg");
+    background-image: url("background.jpg");
     background-size: cover;
     background-position: 60%;
     height: 100%;
