@@ -35,9 +35,10 @@ header{
 }
 /* navbar */
 .nav ul li a{
-    font-size: 0.8em;
+    font-size: 0.7em;
     font-weight: bold;
-    padding-top: 5vh;
+    margin-top: 2vh;
+    padding: 1em !important;
     color: rgba(97, 109, 107, 0.918);
 }
 /* logo */
@@ -65,7 +66,7 @@ header{
         position: absolute;
         z-index: 110;
         top: 5vh;
-        font-size: 2.1em;
+        font-size: 1.8em;
         letter-spacing: 0.1em;
         font-family: 'Playfair Display', serif;
         text-transform: uppercase;
@@ -85,7 +86,7 @@ header{
     #subheading{
         position: relative;
         top: 7vh;
-        font-size: 1.3em;
+        font-size: 1em;
         letter-spacing: 2.1em;
         z-index: 100;
         font-family: 'Playfair Display', serif;
