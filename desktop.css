@@ -107,11 +107,11 @@ header{
             background-color: rgba(0, 0, 0, 0.671);
            color: rgba(97, 109, 107, 0.918);
            font-family: 'Playfair Display', serif;
-           letter-spacing: 0.1;
         }
 
         #heading-card-1 h5{
             font-size: 1em;
+            letter-spacing: 0.05em;
         }
 
         #heading-card-1 h5:after{
@@ -125,6 +125,7 @@ header{
 
         #heading-card-1 p{
             font-size: 0.7em;
+            font-family: 'Raleway', sans-serif;
         }
 
     /* card-2 */
@@ -143,6 +144,7 @@ header{
 
         #heading-card-2 h5{
             font-size: 1em;
+            letter-spacing: 0.05em;
         }
 
         #heading-card-2 h5:after{
@@ -281,12 +283,14 @@ header{
         #cabin{
             padding: 0;
             margin-left: 10vw;
+            padding-left: 1em;
             height: 500px;
             top: 0vh;
+
         }
 
         #blockquote-1{
-            padding-left: 3vw;
+            padding-left: 5vw;
             width: 30%;
         }
 
@@ -401,6 +405,11 @@ header{
         #house{
             height: 500px;
             margin-bottom: 15px;
+            padding: 0;
+        }
+
+        #blockquote-3{
+            padding-left: 5vw;
         }
 
 .blockquote-footer{
