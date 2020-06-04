@@ -13,7 +13,8 @@
     
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <link rel="stylesheet" media='screen and (min-width: 140px) and (max-width: 575.98px)' href="mobile.css" type="text/css">
-    <link rel="stylesheet" media='screen and (min-width: 576px)' href="desktop.css" type="text/css">
+    <link rel="stylesheet" media='screen and (min-width: 576px) and (max-width: 991.98px)' href="tablet.css" type="text/css">
+    <link rel="stylesheet" media='screen and (min-width: 992px)' href="desktop.css" type="text/css">
     
 </head>
 <body>
@@ -41,7 +42,7 @@
         </div>
     </header>
     <main>
-        <div id="row-1" class="container-fluid m-0 d-block">
+        <div id="row-1" class="container-fluid d-block">
             
                 <div class="jumbotron jumbotron-fluid">
                     <div class="container-fluid">
@@ -65,14 +66,14 @@
                 </div>
         </div>  
             
-        <div id="row-2" class="container-fluid m-0 d-block">
+        <div id="row-2" class="container-fluid d-block">
             <div id="objectives" class="col-sm-12 text-left p-0">
                 <p id="objectives-heading">Main objectives</p>
                 <p id="objectives-text">Aim of this selection is to highlight architectural projects that combine professionalism and consciousness. Choosen projects are blended into the nature, sustainable and practical. Main idea is to push the creativity of architects from designing skyscrapers towards beautiful nature, so we can live in it and not harm it. <br> <span class="highlight">Symbiosis.</span>  </p>
             </div>
         </div>
 
-        <div id="row-3" class="container-fluid d-flex p-0 m-0 w-100">
+        <div id="row-3" class="container-fluid d-flex w-100">
             <div id="icons-row" class="row d-flex flex-row ">
                 <div class="card  d-flex flex-column " style="background: transparent; height: 20vh">
                   <img src="nature.png" alt="nature_img">
@@ -95,7 +96,7 @@
         <div id="row-4" class="container-fluid d-flex flex-column p-0 m-0 w-100" style="z-index: -500; background-color: #050505;">
             <div class="row col-md-12 p-0">
             <div id="cabin-div">
-                <img id="cabin" class="col-md-3" src="cabin.jpg" alt="Cabin_in_the_nature" style="z-index: -150">
+                <img id="cabin" class="col-lg-3" src="cabin.jpg" alt="Cabin_in_the_nature" style="z-index: -150">
     
                     <blockquote id="blockquote-1" class="blockquote col-md-9 d-flex flex-column justify-content-center" > 
                         <p class="blockquote-heading">Great Lakes Cabin</p>
@@ -107,8 +108,8 @@
             </div>
             <div class="row col-12">
             <div id="hotel-div">
-                <img id="hotel" class="col-md-3" src="hotel.jpg" alt="Tree_House_hotel" style="z-index: -150">
-                    <blockquote id="blockquote-2" class="blockquote col-md-9 d-flex flex-column justify-content-center">
+                <img id="hotel" class="col-lg-3" src="hotel.jpg" alt="Tree_House_hotel" style="z-index: -150">
+                    <blockquote id="blockquote-2" class="blockquote col-lg-9 d-flex flex-column justify-content-center">
                         <p class="blockquote-heading-2"> Tree House Hotel</p>
                         <p class="quote-2">The project is conceived as a 'slow down' form of tourism, where nature and the integration of architecture within it plays the primary role. We believe that the future of tourism is based on the relationship of the human being with nature. Well integrated, sustainable architecture can amplify this relationship, nothing else is needed </p>
                         <footer id="middle-footer" class="blockquote-footer">Peter Pichler & Silvana Ordinas</footer>
@@ -119,8 +120,8 @@
             </div>
             <div class="row col-12">
                 <div id="house-div">
-                    <img id="house" class="col-md-3 d-flex align-self-start" src="house.jpg" alt="House_in_the_forest" style="z-index: -150">
-                        <blockquote class="blockquote col-md-9 d-flex flex-column justify-content-center">
+                    <img id="house" class="col-lg-3 d-flex" src="house.jpg" alt="House_in_the_forest" style="z-index: -150">
+                        <blockquote class="blockquote col-lg-9 d-flex flex-column justify-content-center">
                             <p class="blockquote-heading">Forest House</p>
                             <p class="quote-1">Forest House is a contemporary style house, erected on mountain side. Due to the natural materials such as stone and wood the house is made of, it perfectly fits into the surrounding, becoming its inseparable part. </p>
                             <footer class="blockquote-footer">U-Style Architects</footer>
@@ -134,18 +135,18 @@
     <footer id="footer">
         <div class="container-fluid p-0">
             <div class="row p-0">
-                <div class="col-md-5 d-flex flex-column align-items-start justify-content-start">
+                <div class="col-lg-5 d-flex flex-column align-items-start justify-content-start">
                     <h5>NARCH</h5>
                     <p>Promoting sustainable architecture projects.<br>
                         Save next generations. <br>
                         All projects are referenced and quoted in order to respect intellectual property.
                     </p>
                 </div>
-                <div class="col-md-3 d-flex flex-column align-items-start text-left justify-content-start">
+                <div class="col-lg-3 d-flex flex-column align-items-start text-left justify-content-start">
                     <h5>Projects</h5>
                     <p style="line-height: 1.5em;">01 Amber House <br> 02 Great Lakes Cabin <br> 03 Tree House Hotel <br> 04 Forest House</p>
                 </div>
-                <div class="col-md-4 d-flex flex-column align-items-start justify-content-start">
+                <div class="col-lg-4 d-flex flex-column align-items-start justify-content-start">
                     <h5>Send us your project</h5>
                     <label for="exampleInputEmail1"></label>
                     <div class="form-group d-flex flex-row">
@@ -162,6 +163,13 @@
     </div>
 
     <script>
+
+if (window.matchMedia('(max-width: 362px)').matches)
+{
+    $("#heading").css({"font-size": "1.8em"});
+    $("#subheading").css({"font-size": "1.1em"});
+    $(".nav ul li a").css({"font-size": "0.6em", "padding-left": "0.8em"});
+}
             
         window.sr = new ScrollReveal({reset: false});
         

@@ -35,15 +35,15 @@ header{
 }
 /* navbar */
 .nav ul li a{
-    font-size: 0.8em;
+    font-size: 1em;
     font-weight: bold;
     padding-top: 5vh;
     color: rgba(97, 109, 107, 0.918);
 }
 /* logo */
 #logo{
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
 }
 /* row-1  */
 #row-1{
@@ -51,6 +51,7 @@ header{
     height: 100vh;
     width: 100%;
     overflow: hidden;
+    padding: 0 !important;
 }
 /* jumbotron */
 .jumbotron{
@@ -59,37 +60,41 @@ header{
     position: absolute;
     top: 10vh;
     color: white;
+    padding-left: 10vw !important;
+    padding-right: 10vw !important;
 }
  /* jumbotron headings */
     #heading{
         position: absolute;
         z-index: 110;
         top: 5vh;
-        font-size: 2.1em;
-        letter-spacing: 0.1em;
+        font-size: 3em;
+        letter-spacing: 0.3em;
         font-family: 'Playfair Display', serif;
         text-transform: uppercase;
+        padding: 0 !important;
     }
     #sign{
         position: absolute;
         font-size: 10em;
-        left: 5vw;
-        top:-2vh;
+        top: -1vh;
         background: linear-gradient(63deg, rgba(251,164,40,0.9164040616246498) 0%, rgba(246, 102, 25, 0.616) 36%, rgba(245, 97, 23, 0.63) 38%, rgba(241, 49, 11, 0.801) 100%);
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
         z-index: 100;
         font-family: 'Raleway', sans-serif;
+        padding: 0 !important;
     }
     #subheading{
         position: relative;
         top: 7vh;
         font-size: 1.3em;
-        letter-spacing: 2.1em;
+        letter-spacing: 3em;
         z-index: 100;
         font-family: 'Playfair Display', serif;
         mix-blend-mode: luminosity;
+        padding: 0 !important;
     }
     /* jumbotron cards */
         /* card 1 */
@@ -98,8 +103,9 @@ header{
             background-color: rgba(0, 0, 0, 0.671);
             color: rgba(97, 109, 107, 0.918);
             height: auto;
-            width: 80vw;
+            width: 75vw;
             bottom: 200px;
+            
         }
 
         #heading-card-1 h5{
@@ -129,13 +135,14 @@ header{
             color: rgba(97, 109, 107, 0.918);
             bottom: 15vh;
             height: auto;
-            width: 80vw;
+            width: 75vw;
             padding-top: 10px;
         }
 
         #heading-card-2 h5{
             font-size: 0.9em;
             font-family: 'Playfair Display', serif;
+            letter-spacing: 0.1em;
         }
 
         #heading-card-2 h5:after{
@@ -162,10 +169,8 @@ header{
         background-color: #050505;
         color: rgba(97, 109, 107, 0.918);
         width: initial;
-        padding-left: 10vw;
-        padding-right: 10vw;
-        padding-bottom: 5vh;
-        padding-top: 10vh;
+        height: 60vh;
+        padding: 10vh 10vw 10vh 10vw;
     }
     #objectives-heading{
         font-size: 1.8em;
@@ -195,17 +200,16 @@ header{
         background-color: #050505;
         color: rgba(97, 109, 107, 0.918);
         width: 100vw;
-        height: 40vh;
+        height: 55vh;
         padding-left: 10vw;
-        padding-bottom: 10vh;
         padding-right: 10vw;
         justify-content: space-around;
         align-items: start;
         top:0;
     }
     #row-3 img{
-        width: 40px;
-        height: 40px;
+        width: 60px;
+        height: 60px;
     }
     .card{
         padding: 5vw;
@@ -213,15 +217,14 @@ header{
     .card-title{
         font-family: 'Playfair Display', serif;
         text-align: left;
-        font-size: 0.6em;
+        font-size: 1em;
         padding-top: 2em;
     }
     .card-text{
-        font-size: 0.7em;
+        font-size: 0.8em;
         line-height: 1.5em;
         text-align: left;
         width: 15vw;
-        
       
     }
 
@@ -256,14 +259,18 @@ header{
             z-index: -200;
         }
         #cabin{
-            height: auto;
+            height: 500px;
+            width: 65%;
             padding: 1em;
+        }
+
+        #blockquote-1{
+            justify-content: start !important;
         }
         .blockquote-heading{
             font-size: 1.2em;
             font-family: 'Playfair Display', serif;
             letter-spacing: 0.1em;
-            padding-top: 5vh;
         }
         .blockquote-heading:after{
             content: "";
@@ -275,13 +282,14 @@ header{
         }
         .quote-1{ 
             font-size: 0.6em;
+            width: 65%;
         }
         /* hotel row */
         #hotel-div{
+            float:right;
             background-color: #050505;
             z-index: -100;
             height: auto;
-            top: 0;
             display: flex;
             flex-direction: column;
             padding-left: 10vw;
@@ -295,18 +303,22 @@ header{
             background-color: #090e088e;
             border-right: 5px solid rgba(241, 49, 11, 0.801);
             width: 100vw;
-            height: 40vh;
+            height: 80vh;
             top: 10vh;
             right: 10vw;
             z-index: -200;
         }
         #hotel{
-            height: 500px;
+            height: auto;
+            width: 65%;
+            margin-left: 35%;
+            right: 0;
             padding-bottom: 5vh;
         }
         #blockquote-2{
             text-align: right;
             color: rgba(97, 109, 107, 0.918);
+            justify-content: start !important;
         }
         .blockquote-heading-2{
             font-size: 1.2em;
@@ -320,12 +332,12 @@ header{
             margin: 0;
             width: 25px;
             border-bottom: 3px solid rgba(241, 49, 11, 0.801);
-            text-align: right;
-            margin-left: 5vw;
+            margin-left: 43vw;
         }
         .quote-2{
             font-size: 0.6em;
-            right: 0;
+            margin-left: 35%;
+            width: 65%;
         }
         /* house row */
         #house-div{
@@ -351,7 +363,8 @@ header{
         #house{
             padding: 1em;
             height: 500px;
-
+            width: 65%;
+            margin-bottom: 5vh !important;
         }
 
 .blockquote-footer{
@@ -369,6 +382,10 @@ header{
     justify-content: center;
     bottom: 0;
 }
+
+#footer h5{
+    font-size: 0.9em;
+}
 #footer h5:after{
     content: "";
     display: block;
@@ -382,11 +399,11 @@ header{
     border: none; 
     color: rgba(97, 109, 107, 0.918); 
     background-color: #090e088e; 
-    width: 60vw;
+    width: 30vw;
 }
 #btn-subscribe{
     border: none; 
-    width: 20vw; 
+    width: 10vw; 
     height: 7vh; 
     background: rgba(241, 49, 11, 0.801);
 }
